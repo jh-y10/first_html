@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduce</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      #div-exam {
+        background-color: #ff4646;
+        color: white;
+        text-align: center;
+      }
+      #p-exam {
+        background-color: #6262ff;
+        color: white;
+        text-align: center;
+      }
+      #span-exam {
+        background-color: #46bd78;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>자기소개서</h1>
+    <div>안녕하세요 제 이름은 <strong>윤준혁</strong> 입니다.</div>
+    <div>코알누 스터티 3기 끝까지 가봅시다 화이팅!!</div>
+    <h2>좋아하는 음식</h2>
+    <ul>
+      <li>돼지고기 김치찌개</li>
+      <li>제육볶음</li>
+      <li>돼지국밥</li>
+    </ul>
+    <h2>좋아하는 가수</h2>
+    <img
+      src="https://cwn.kr/news/data/2024/08/01/p1065576633704629_531_thum.jpg"
+      alt="Taeyeon"
+      width="200px"
+    />
+    <h2>좋아하는 노래</h2>
+    <audio controls src="./audio/cwy.mp3"></audio>
+    <h2>인적사항</h2>
+    <table border="1">
+      <tr>
+        <th>질문</th>
+        <th>답변</th>
+      </tr>
+      <tr>
+        <th>사는 곳</th>
+        <td>부산광역시</td>
+      </tr>
+      <tr>
+        <th>나이</th>
+        <td align="center">24</td>
+      </tr>
+    </table>
+    <h2>연락 & 문의</h2>
+    <input type="text" placeholder="궁금한 사항을 써주세요" />
+    <button>전송</button>
+    <h2>번외: p, div, span 태그의 차이점은 무엇일까?</h2>
+    <div id="div-exam">div 태그</div>
+    <p id="p-exam">p 태그</p>
+    <span id="span-exam">span 태그</span>
+    <ul>
+      <li>
+        div 태그와 p 태그는 블럭 요소 span 태그는 인라인 요소로 구분할 수 있다
+      </li>
+      <li>블럭 요소는 태그의 영역이 한 줄 전체를 차지한다</li>
+      <li>인라인 요소는 태그 안에 적인 텍스트의 길이 만큼 영역을 차지한다</li>
+    </ul>
+    <ul>
+      <li>
+        블럭요소인 div, p 태그는 인라인요소인 span 태그를 하위요소로 포함 할 수
+        있다
+      </li>
+      <li>
+        인라인 요소인 span 태그는 블럭요소인 div, p 태그를 하위요소로 포함 할 수
+        없다
+      </li>
+    </ul>
+    <ul>
+      <li>
+        div 태그와 p 태그는 둘다 텍스트를 출력할 수 있고 블록요소로 자동
+        줄바꿈으로 영역이 형성된다
+      </li>
+      <li>
+        p 태그는 텍스트를 입력하는 영역을 구성하므로 하위요소로 다른 블록요소를
+        포함할 수 없다
+      </li>
+      <li>
+        div 태그는 p 태그 처럼 텍스트를 입력할 수 있으나 HTML 문서의 영역을
+        구분하기 위한 목적의 태그이므로 하위요소로 다른 블럭요소를 포함할 수
+        있다
+      </li>
+    </ul>
+  </body>
+</html>
